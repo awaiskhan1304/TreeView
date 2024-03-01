@@ -1,0 +1,43 @@
+ul {
+  list-style-type: none;
+}
+.checkbox-tree {
+    list-style: none;
+    padding-left: 30px;
+}
+
+.checkbox-tree li {
+    margin-bottom: 5px;
+}
+
+.checkbox-tree label {
+    cursor: pointer;
+    color: black;
+    font-size: 16px;
+}
+
+.checkbox-tree input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox-tree input[type="checkbox"] + label:before {
+    content: "\25A1";
+    padding-right: 5px;
+}
+
+.checkbox-tree input[type="checkbox"]:checked + label:before {
+    content: "\2611";
+}
+
+.checkbox-tree ul {
+    /* padding-left: 30px; */
+}
+.selected {
+    background: grey;
+    font-size: 10px;
+    padding: 5px 5px 5px 5px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-right: 10px;
+    white-space: nowrap;
+}
